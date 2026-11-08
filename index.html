@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ff8b61" />
+    <meta name="description" content="Een verjaardagsverrassing voor Cobie." />
+    <title>Een verrassing voor Cobie</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="scratch-card" aria-label="Verjaardagskraskaart voor Cobie">
+      <section class="prize" aria-label="Jouw verjaardagscadeau">
+        <img class="prize__image" src="prize-cobie.jpg?v=1" alt="Gefeliciteerd met je verjaardag, Cobie! 250 euro voor een mooie nieuwe jas, helemaal naar jouw smaak!" />
+      </section>
+      <canvas id="scratch-layer" class="scratch-layer" tabindex="0" role="button" aria-label="Kras om je cadeau te ontdekken. Druk op Enter om je cadeau zonder krassen te tonen."></canvas>
+      <div class="prompt" id="prompt" aria-hidden="true">
+        <p class="prompt__eyebrow">Een verrassing voor jou</p>
+        <div class="prompt__title" aria-label="Krassen maar!">
+          <span style="--i:0">K</span><span style="--i:1">r</span><span style="--i:2">a</span><span style="--i:3">s</span><span style="--i:4">s</span><span style="--i:5">e</span><span style="--i:6">n</span>
+          <span class="prompt__space"></span>
+          <span style="--i:7">m</span><span style="--i:8">a</span><span style="--i:9">a</span><span style="--i:10">r</span><span style="--i:11">!</span>
+        </div>
+        <div class="prompt__gesture"><span class="prompt__finger" aria-hidden="true">☝</span><span>Veeg met je vinger over het scherm</span></div>
+      </div>
+      <p class="sr-only" id="status" aria-live="polite"></p>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
